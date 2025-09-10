@@ -1,0 +1,145 @@
+.pricing-row .duration-wrapper {
+  align-self: center;
+  border-radius: 5rem;
+  background-color: white;
+  padding: 4px;
+}
+
+.pricing-row .duration-wrapper button {
+  border: none;
+  border-radius: inherit;
+  background: none;
+  font-size: 0.875rem;
+  cursor: pointer;
+  padding: 18px 24px;
+}
+
+.pricing-row .duration-wrapper button:first-child {
+  background-color: #1338be;
+  color: white;
+}
+
+.pricing-row .pricing-cards {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1.24rem;
+  margin-top: 0;
+}
+
+.pricing-row .pricing-cards .cards {
+  background-color: white;
+  box-shadow: 5px 9px 10px #00000030;
+  color: black;
+  padding: 2rem;
+  border-radius: 2.5rem;
+}
+
+.pricing-row .pricing-cards .cards:nth-of-type(2) {
+  background-color: #1338be;
+}
+
+.pricing-row .pricing-cards .cards:nth-of-type(2) .price span:last-child {
+  color: #cccccc;
+}
+
+.pricing-row .pricing-cards .cards:nth-of-type(2) button {
+  background-color: white;
+  color: black;
+}
+
+.pricing-row .pricing-cards .cards h5 {
+  color: #1338be;
+  font-size: 1.25rem;
+}
+
+.pricing-row .pricing-cards .cards .price span:first-child {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #0d0d0d;
+}
+
+.pricing-row .pricing-cards .cards .price span:last-child {
+  margin-left: 1rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #808080;
+}
+
+.pricing-row .pricing-cards .cards .price-details {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.pricing-row .pricing-cards .cards .price-details p {
+  font-size: 1rem;
+}
+
+.pricing-row .pricing-cards .cards button {
+  background-color: black;
+  justify-content: center;
+  border: none;
+  border-radius: 5rem;
+  color: white;
+  font-size: 1rem;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+/* ?? Shared props */
+
+.pricing-row .pricing-cards .cards:nth-of-type(2),
+.pricing-row .pricing-cards .cards:nth-of-type(2) h5,
+.pricing-row .pricing-cards .cards:nth-of-type(2) .price span:first-child {
+  color: white;
+}
+
+.pricing-row .pricing-cards .cards .price,
+.pricing-row .pricing-cards .cards .price-details ul li,
+.pricing-row .pricing-cards .cards button {
+  align-items: center;
+}
+
+.pricing-row .pricing-cards .cards,
+.pricing-row .pricing-cards .cards .price,
+.pricing-row .pricing-cards .cards .price-details,
+.pricing-row .pricing-cards .cards .price-details ul,
+.pricing-row .pricing-cards .cards .price-details ul li,
+.pricing-row .pricing-cards .cards button {
+  display: flex;
+}
+
+.pricing-row .pricing-cards .cards,
+.pricing-row .pricing-cards .cards .price-details,
+.pricing-row .pricing-cards .cards .price-details ul,
+.pricing-row .pricing-cards .cards .price-details ul li,
+.pricing-row .pricing-cards .cards button {
+  gap: 1rem;
+}
+
+.pricing-row .pricing-cards .cards,
+.pricing-row .pricing-cards .cards .price-details,
+.pricing-row .pricing-cards .cards .price-details ul {
+  flex-direction: column;
+}
+
+@media (min-width: 640px) {
+  .pricing-row .pricing-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 768px) {
+  .pricing-row .duration-wrapper button {
+    padding: 24px 48px;
+    font-size: 1rem;
+  }
+
+  .pricing-row .pricing-cards {
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 1.25rem;
+  }
+
+  .pricing-row .pricing-cards .cards .price span:first-child {
+    font-size: 3rem;
+  }
+}
