@@ -1,0 +1,164 @@
+.faq-row {
+  gap: 3rem;
+}
+
+.categories-wrapper {
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.categories-wrapper button {
+  padding: 12px 3rem;
+  border: 1px solid #ccc;
+  border-radius: 5rem;
+  margin-inline: 8px;
+}
+
+.categories-wrapper button.active {
+  background-color: black;
+  color: white;
+}
+
+.view-all {
+  padding: 1rem 2rem;
+  border-radius: 5rem;
+  background-color: #1338be;
+  align-items: center;
+  gap: 12px;
+  color: white;
+}
+
+.faq-wrapper {
+  width: 100%;
+  gap: 2rem;
+}
+
+.faq-wrapper img {
+  width: 100%;
+  border-radius: 1rem;
+  display: none;
+  align-self: self-start;
+}
+
+.accordion {
+  width: 100%;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 1.5rem;
+  padding: 1rem;
+  box-shadow: 10px 10px 10px #00000030;
+}
+
+.accordion-item {
+  border-bottom: 2px solid #ccc;
+}
+
+.accordion-item:last-child {
+  border: none;
+}
+.accordion-item summary {
+  padding: 1rem;
+  cursor: pointer;
+  font-weight: 600;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.accordion-item summary h2 {
+  font-size: 1.3rem;
+  user-select: none;
+}
+
+.accordion-item summary span {
+  padding: 14px;
+  height: 2.8rem;
+  display: none;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.accordion-item summary span #plus-icon {
+  display: block;
+}
+
+.accordion-item summary span #minus-icon {
+  display: none;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+.accordion-item .content {
+  max-height: 0;
+  padding-inline: 1rem;
+  overflow: hidden;
+  transition: max-height 0.2s ease-in-out;
+  margin-bottom: 1rem;
+  color: #00000090;
+}
+
+/*?? Open accordion styles */
+
+details[open] .content {
+  max-height: 500px;
+}
+
+details[open] summary span {
+  background-color: black;
+}
+
+details[open] summary span svg#plus-icon {
+  display: none;
+}
+
+details[open] summary span svg#minus-icon {
+  display: block;
+}
+
+/*?? Shared */
+
+.faq-wrapper,
+.view-all,
+.accordion {
+  display: flex;
+}
+
+.categories-wrapper button,
+.view-all {
+  font-size: 0.875rem;
+}
+
+.categories-wrapper,
+.faq-wrapper {
+  display: flex;
+}
+
+@media (min-width: 640px) {
+  .accordion {
+    height: 28rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .categories-wrapper {
+    flex-direction: row;
+  }
+
+  .faq-wrapper img {
+    display: block;
+  }
+
+  .accordion {
+    height: auto;
+    width: 70%;
+  }
+
+  .accordion-item summary span {
+    display: grid;
+    place-items: center;
+  }
+}

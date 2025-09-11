@@ -1,0 +1,59 @@
+@import url("title-row.css");
+@import url("faq-row.css");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-inline-size: 100%;
+}
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  height: fit-content;
+}
+
+main {
+  background-color: #f0f0f0;
+  padding: 1.5rem;
+  height: fit-content;
+}
+
+section {
+  gap: 3rem;
+}
+
+.section-container {
+  align-items: center;
+}
+
+main,
+section,
+.section-container {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 640px) {
+  main {
+    padding: 2.8rem;
+  }
+}
+
+@media (min-width: 768px) {
+  main {
+    padding: 4rem;
+  }
+}
