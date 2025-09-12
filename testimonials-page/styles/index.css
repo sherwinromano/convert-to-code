@@ -1,0 +1,79 @@
+@import url("title-row.css");
+@import url("testimonial-row.css");
+
+*,
+*::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+* {
+  font-family: "Inter", sans-serif;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+main {
+  background-color: #f0f0f0;
+  height: fit-content;
+  padding: min(4rem, 8%);
+}
+
+img {
+  max-inline-size: 100%;
+  display: block;
+}
+
+section {
+  width: 100%;
+  height: 100%;
+  gap: 3rem;
+  flex-direction: column;
+}
+
+.section-children {
+  gap: 2.8rem;
+  height: fit-content;
+  align-items: start;
+  position: relative;
+  flex-direction: column;
+}
+
+.view-all {
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 5rem;
+  background-color: #1338be;
+  align-items: center;
+  align-self: center;
+  gap: 12px;
+  color: white;
+  cursor: pointer;
+}
+
+/* ?? Shared properties */
+
+main,
+section,
+.section-children,
+.view-all {
+  display: flex;
+}
+
+@media (min-width: 640px) {
+  .section-children {
+    gap: 2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  main {
+    height: 100vh;
+  }
+
+  .section-children {
+    flex-direction: row;
+  }
+}
