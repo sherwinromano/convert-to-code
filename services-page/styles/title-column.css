@@ -1,0 +1,96 @@
+.title-column {
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  width: 100%;
+}
+
+.title-column h6 {
+  font-weight: 400;
+  font-size: 0.875rem;
+  border: 1px solid #ccc;
+  border-radius: 2rem;
+  padding: 10px 18px;
+}
+
+.title-column > h1 {
+  font-size: 3rem;
+  line-height: 1;
+  background: linear-gradient(to right, #1338be, black 90%);
+  background-clip: text;
+  color: transparent;
+  padding-bottom: 4px;
+  text-align: center;
+}
+
+.title-column > p {
+  width: 100%;
+  color: #808080;
+  font-size: 1.3rem;
+  font-weight: 300;
+  text-align: center;
+}
+
+.title-column .services-features {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 2rem;
+  margin-block: 2rem;
+}
+
+.title-column .services-features .service-content {
+  align-items: start;
+  gap: 1rem;
+}
+
+.title-column .services-features .service-content .service-logo {
+  display: grid;
+  place-items: center;
+  border: 1px solid #ccc;
+  padding: 12px;
+  border-radius: 5rem;
+}
+
+.title-column .services-features .service-content .service-description h2 {
+  margin-bottom: 12px;
+  color: #0d0d0d;
+}
+
+.title-column .services-features .service-content .service-description p {
+  color: #808080;
+  font-size: 1rem;
+}
+
+.title-column .title-column-btn {
+  align-items: center;
+  padding: 12px 28px;
+  gap: 12px;
+  border-radius: 5rem;
+  background-color: #1338be;
+  font-size: 0.875rem;
+  color: white;
+}
+
+.title-column,
+.title-column .title-column-btn,
+.title-column .services-features .service-content {
+  display: flex;
+}
+
+@media (min-width: 640px) {
+  .title-column .services-features {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .title-column {
+    align-items: start;
+    width: 50%;
+  }
+
+  .title-column h1,
+  .title-column p {
+    text-align: start;
+  }
+}

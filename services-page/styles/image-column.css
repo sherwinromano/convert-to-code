@@ -1,0 +1,45 @@
+.image-column {
+  display: none;
+  width: 50%;
+  align-self: stretch;
+  margin-block: 1.5rem;
+  position: relative;
+}
+
+.image-column .float {
+  position: absolute;
+  right: 0;
+  background-color: #f0f0f0;
+  padding: 1rem;
+  display: flex;
+  height: fit-content;
+}
+
+.image-column .arrow-up span {
+  background-color: black;
+  display: grid;
+  place-items: center;
+  padding: 1rem;
+  border-radius: 5rem;
+}
+
+.image-column .image-text {
+  left: 0;
+  bottom: 0;
+  width: fit-content;
+}
+
+.image-column .image-text span {
+  background-color: black;
+  text-align: center;
+  color: #f0f0f0;
+  padding: 1.5rem;
+  border-radius: 5rem;
+  font-size: 1rem;
+}
+
+@media (min-width: 1024px) {
+  .image-column {
+    display: flex;
+  }
+}

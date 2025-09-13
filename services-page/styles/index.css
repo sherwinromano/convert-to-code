@@ -1,0 +1,48 @@
+@import url("title-column.css");
+@import url("image-column.css");
+
+*,
+*::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+* {
+  font-family: "Inter", sans-serif;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+main {
+  background-color: #f0f0f0;
+  height: fit-content;
+  padding: min(4rem, 8%);
+}
+
+img {
+  max-inline-size: 100%;
+  display: block;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+}
+
+.section-children {
+  gap: 2.8rem;
+  height: fit-content;
+  align-items: center;
+  position: relative;
+}
+
+/* ?? Shared properties */
+
+main,
+section,
+.section-children,
+.view-all {
+  display: flex;
+}
