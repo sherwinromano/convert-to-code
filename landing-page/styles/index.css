@@ -1,0 +1,54 @@
+@import url("header.css");
+@import url("title-row.css");
+@import url("images-row.css");
+
+/* ?? CSS Reset */
+
+*,
+*::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+* {
+  font-family: "Inter", sans-serif;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+img {
+  max-inline-size: 100%;
+  display: block;
+}
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* ?? Main styles */
+
+main {
+  background-color: #f0f0f0;
+  flex-direction: column;
+  height: 100vh;
+}
+
+section {
+  padding-inline: min(4rem, 5%);
+  margin-block: min(4rem, 5%);
+  height: 100%;
+  gap: 5rem;
+  justify-content: space-between;
+}
+
+/* ?? Shared styles */
+
+main,
+header,
+section {
+  display: flex;
+}
