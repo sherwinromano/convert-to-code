@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/index.css" />
+  </head>
+  <body>
+    <main>
+      <section class="login-form-column">
+        <div class="login-form-container">
+          <div class="login-title">
+            <h1>Get Started Now</h1>
+            <p>Sign in to start your journey at CryptoCap</p>
+          </div>
+          <div class="oauth-buttons">
+            <button>
+              <span>
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 48 48"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M23.9996 19.6363V28.9309H36.916C36.3488 31.9199 34.6468 34.4509 32.0941 36.1527L39.8831 42.1964C44.4213 38.0075 47.0395 31.8547 47.0395 24.5456C47.0395 22.8438 46.8868 21.2073 46.6031 19.6366L23.9996 19.6363Z"
+                    fill="#4285F4"
+                  />
+                  <path
+                    d="M10.5494 28.568L8.79263 29.9128L2.57434 34.7564C6.52342 42.589 14.6174 48 23.9991 48C30.4789 48 35.9116 45.8618 39.8826 42.1964L32.0936 36.1528C29.9554 37.5927 27.2281 38.4656 23.9991 38.4656C17.7591 38.4656 12.4575 34.2547 10.5592 28.5819L10.5494 28.568Z"
+                    fill="#34A853"
+                  />
+                  <path
+                    d="M2.57436 13.2436C0.938084 16.4726 0 20.1163 0 23.9999C0 27.8834 0.938084 31.5271 2.57436 34.7561C2.57436 34.7777 10.5599 28.5597 10.5599 28.5597C10.08 27.1197 9.79624 25.5925 9.79624 23.9996C9.79624 22.4067 10.08 20.8795 10.5599 19.4395L2.57436 13.2436Z"
+                    fill="#FBBC05"
+                  />
+                  <path
+                    d="M23.9996 9.55636C27.5342 9.55636 30.676 10.7781 33.1851 13.1345L40.0577 6.2619C35.8904 2.37833 30.4797 0 23.9996 0C14.6179 0 6.52342 5.38908 2.57434 13.2437L10.5597 19.44C12.4578 13.7672 17.7596 9.55636 23.9996 9.55636Z"
+                    fill="#EA4335"
+                  />
+                </svg>
+              </span>
+              <p>Sign In with Google</p>
+            </button>
+            <button>
+              <span>
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 41 48"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M39.5839 37.4071C38.858 39.0841 37.9988 40.6277 37.0033 42.047C35.6463 43.9817 34.5352 45.3209 33.6789 46.0646C32.3516 47.2853 30.9294 47.9105 29.4065 47.946C28.3132 47.946 26.9947 47.6349 25.4599 47.0039C23.9201 46.3757 22.5051 46.0646 21.2112 46.0646C19.8542 46.0646 18.3988 46.3757 16.8421 47.0039C15.2831 47.6349 14.0271 47.9638 13.0668 47.9964C11.6064 48.0586 10.1508 47.4157 8.69779 46.0646C7.77042 45.2558 6.61046 43.8691 5.22087 41.9047C3.72995 39.807 2.50422 37.3745 1.54395 34.6013C0.515539 31.6058 0 28.7051 0 25.8969C0 22.6801 0.695089 19.9057 2.08734 17.5807C3.18153 15.7132 4.63718 14.2401 6.45905 13.1586C8.28092 12.0772 10.2495 11.5261 12.3694 11.4908C13.5293 11.4908 15.0505 11.8497 16.9408 12.5548C18.8258 13.2623 20.0361 13.6212 20.5667 13.6212C20.9635 13.6212 22.308 13.2016 24.5874 12.3652C26.7428 11.5895 28.562 11.2683 30.0524 11.3948C34.0908 11.7208 37.1247 13.3127 39.1425 16.1808C35.5307 18.3692 33.7441 21.4342 33.7797 25.3663C33.8123 28.429 34.9233 30.9777 37.107 33.0013C38.0966 33.9405 39.2017 34.6664 40.4313 35.182C40.1646 35.9553 39.8832 36.696 39.5839 37.4071ZM30.322 0.960792C30.322 3.36134 29.445 5.60273 27.6969 7.67733C25.5873 10.1436 23.0357 11.5688 20.2687 11.3439C20.2334 11.0559 20.213 10.7528 20.213 10.4343C20.213 8.12976 21.2162 5.66346 22.9978 3.64693C23.8872 2.62593 25.0185 1.77697 26.3903 1.09975C27.7591 0.432629 29.0539 0.0636968 30.2716 0.000518799C30.3072 0.321435 30.322 0.642371 30.322 0.960761V0.960792Z"
+                    fill="white"
+                  />
+                </svg>
+              </span>
+              <p>Sign In with Apple</p>
+            </button>
+          </div>
+          <div class="other-methods">
+            <span class="line"></span>
+            <p>or continue with</p>
+          </div>
+          <div class="login-form">
+            <form>
+              <label for="email">Email</label>
+              <input type="email" name="email" id="email" />
+              <label for="password">Password</label>
+              <div class="custom-password-input">
+                <input type="password" name="password" id="password" />
+                <span>
+                  <svg
+                    width="18"
+                    height="18"
+                    viewBox="0 0 22 18"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M1.0355 9.32484C0.96642 9.11757 0.966354 8.89318 1.03531 8.68587C2.42368 4.51216 6.36074 1.50244 11.0008 1.50244C15.6386 1.50244 19.5742 4.50937 20.9643 8.68004C21.0334 8.88731 21.0334 9.11171 20.9645 9.31902C19.5761 13.4927 15.639 16.5024 10.999 16.5024C6.36115 16.5024 2.42559 13.4955 1.0355 9.32484Z"
+                      stroke="#ccc"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M14 9.00244C14 10.6593 12.6568 12.0024 11 12.0024C9.3431 12.0024 7.99995 10.6593 7.99995 9.00244C7.99995 7.34559 9.3431 6.00244 11 6.00244C12.6568 6.00244 14 7.34559 14 9.00244Z"
+                      stroke="#ccc"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </span>
+              </div>
+              <div class="form-additions">
+                <div class="remember-me-wrapper">
+                  <input type="checkbox" name="remember" id="remember" />
+                  <label for="remember-me">Remember me</label>
+                </div>
+                <a href="#">Forgot Password?</a>
+              </div>
+              <button>Get Started</button>
+            </form>
+            <p>Don't have an account yet? <a href="#">Sign up</a></p>
+          </div>
+        </div>
+      </section>
+      <section class="login-details-column">
+        <div class="review-container">
+          <div class="review-bars">
+            <div class="bars"></div>
+            <div class="bars"></div>
+            <div class="bars"></div>
+            <div class="bars"></div>
+          </div>
+          <div class="review">
+            <svg
+              fill="#fff"
+              viewBox="0 0 8 8"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g
+                id="SVGRepo_tracerCarrier"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></g>
+              <g id="SVGRepo_iconCarrier">
+                <path
+                  d="M3 0c-1.65 0-3 1.35-3 3v3h3v-3h-2c0-1.11.89-2 2-2v-1zm5 0c-1.65 0-3 1.35-3 3v3h3v-3h-2c0-1.11.89-2 2-2v-1z"
+                  transform="translate(0 1)"
+                ></path>
+              </g>
+            </svg>
+            <p>
+              CryptoCap made our transactions seamless and secure. The platform
+              is fast, reliable, and incredibly user-friendly. Highly
+              recommended.
+            </p>
+            <div class="user-profile">
+              <div class="user">
+                <img
+                  src="img/male[2].jpg"
+                  width="500px"
+                  alt="Mateo Alvarez photo"
+                />
+                <div class="user-details">
+                  <h3>Mateo Alvarez</h3>
+                  <p>Web3 Entrepreneur</p>
+                </div>
+              </div>
+              <div class="logo">
+                <img src="img/cryptocap-logo.png" alt="CryptoCap Logo" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <img
+          src="img/crypto-landing-page.jpg"
+          width="600px"
+          alt="Crypto landing page UI"
+        />
+      </section>
+    </main>
+  </body>
+</html>

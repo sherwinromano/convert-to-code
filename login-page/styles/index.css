@@ -1,0 +1,44 @@
+@import url("login-form-column.css");
+@import url("login-details-column.css");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+* {
+  font-family: "Inter", sans-serif;
+}
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+img {
+  max-inline-size: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+
+main {
+  display: flex;
+  height: fit-content;
+}
+
+main > section.login-details-column {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  main > section.login-details-column {
+    display: flex;
+  }
+}

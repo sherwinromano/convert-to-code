@@ -1,0 +1,189 @@
+.login-form-column {
+  background-color: #0d0d0d;
+  color: #f0f0f0;
+  padding-inline: min(8rem, 8%);
+  padding-block: 7rem;
+  width: 100%;
+}
+
+.login-form-column > .login-form-container {
+  justify-content: center;
+  flex-grow: 1;
+
+  gap: 2rem;
+}
+
+.login-title > h1 {
+  font-weight: 600;
+  margin-bottom: 8px;
+  letter-spacing: -1px;
+}
+
+.login-title > p {
+  font-size: 1rem;
+  color: #ebebeb;
+}
+
+/* ?? Sign in with Apple & Google buttons */
+
+.oauth-buttons {
+  gap: 12px;
+}
+
+.oauth-buttons > button {
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #505050;
+  gap: 1rem;
+  border-radius: 2rem;
+  padding-block: 14px;
+  color: white;
+}
+
+.oauth-buttons > button > span {
+  display: grid;
+  place-content: center;
+}
+
+.oauth-buttons > button > p {
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.other-methods {
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-block: 1rem;
+}
+
+.other-methods > span.line {
+  height: 1px;
+  width: 100%;
+  background-color: #505050;
+}
+
+.other-methods > p {
+  background-color: #0d0d0d;
+  color: #ebebeb;
+  padding-inline: 1rem;
+  left: 25%;
+  position: absolute;
+  z-index: 99;
+}
+/* ?? Credentials form */
+
+.login-form > form {
+  gap: 12px;
+}
+
+.login-form > form input {
+  background: none;
+}
+
+.login-form > form > .custom-password-input {
+  align-items: center;
+  gap: 2rem;
+}
+
+.login-form > form > .custom-password-input > input[type="password"] {
+  border: none;
+  font-size: 1rem;
+  color: white;
+  outline: none;
+  flex-grow: 1;
+}
+
+.login-form-container > .login-form > form > .form-additions {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.login-form-container
+  > .login-form
+  > form
+  > .form-additions
+  .remember-me-wrapper
+  input[type="checkbox"] {
+  margin-right: 8px;
+  cursor: pointer;
+  accent-color: #0fae96;
+}
+
+.login-form-container
+  > .login-form
+  > form
+  > .form-additions
+  .remember-me-wrapper
+  label {
+  color: #707070;
+  font-size: 0.875rem;
+}
+
+.login-form-container > .login-form > form > .form-additions a {
+  color: #707070;
+  font-size: 0.875rem;
+}
+
+.login-form > form > button {
+  padding: 1rem;
+  background-color: #0fae96;
+  margin-top: 1.3rem;
+  color: white;
+  border-radius: 2rem;
+}
+
+.login-form > p {
+  margin-top: 14px;
+  text-align: center;
+  color: #707070;
+  font-size: 0.875rem;
+}
+
+.login-form > p a {
+  color: #ebebeb;
+}
+
+.login-form-column,
+.login-form-column > .login-form-container,
+.login-form-container > .oauth-buttons,
+.login-form-container > .oauth-buttons > button,
+.login-form-container > .login-form,
+.login-form-container > .login-form > form,
+.login-form-container > .login-form > form > .custom-password-input,
+.login-form-container > .login-form > form > .form-additions {
+  display: flex;
+}
+
+.login-form-column > .login-form-container,
+.oauth-buttons,
+.login-form,
+.login-form > form {
+  flex-direction: column;
+}
+
+.login-form > form > input,
+.login-form > form > .custom-password-input {
+  border: 1px solid #505050;
+  border-radius: 2rem;
+  outline: none;
+  padding: 12px 1rem;
+  color: white;
+  font-size: 1rem;
+}
+
+@media (min-width: 640px) {
+  .other-methods > p {
+    left: 40%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .login-form-column {
+    width: 50%;
+  }
+
+  .other-methods > p {
+    left: 34%;
+  }
+}
