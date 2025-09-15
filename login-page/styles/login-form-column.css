@@ -1,8 +1,8 @@
 .login-form-column {
   background-color: #0d0d0d;
   color: #f0f0f0;
-  padding-inline: min(8rem, 8%);
-  padding-block: 7rem;
+  padding-inline: clamp(2rem, 8vw, 5rem);
+  padding-block: 12vh;
   width: 100%;
 }
 
@@ -50,6 +50,8 @@
   font-weight: 500;
 }
 
+/* ?? or continue with text */
+
 .other-methods {
   display: flex;
   align-items: center;
@@ -71,6 +73,7 @@
   position: absolute;
   z-index: 99;
 }
+
 /* ?? Credentials form */
 
 .login-form > form {
@@ -144,6 +147,8 @@
   color: #ebebeb;
 }
 
+/* ?? Shared properties */
+
 .login-form-column,
 .login-form-column > .login-form-container,
 .login-form-container > .oauth-buttons,
@@ -171,6 +176,8 @@
   color: white;
   font-size: 1rem;
 }
+
+/* ?? Responsive styles */
 
 @media (min-width: 640px) {
   .other-methods > p {

@@ -23,6 +23,7 @@ button {
 body {
   font-family: "Inter", sans-serif;
   height: fit-content;
+  overflow-x: hidden;
 }
 
 main {

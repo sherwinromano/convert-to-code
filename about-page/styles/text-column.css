@@ -1,3 +1,8 @@
+:root {
+  --light-gray: #808080;
+  --simple-white: #f0f0f0;
+}
+
 .text-column {
   flex-direction: column;
   align-items: start;
@@ -15,16 +20,16 @@
 }
 
 .text-column > h1 {
-  font-size: clamp(2rem, 2vw + 1.8rem, 3rem);
+  font-size: clamp(2rem, 2vw + 1.5rem, 3rem);
   line-height: 1;
-  color: #f0f0f0;
+  color: var(--simple-white);
   padding-bottom: 4px;
   text-align: start;
 }
 
 .text-column > p {
   width: 100%;
-  color: #808080;
+  color: var(--light-gray);
   font-size: clamp(1rem, 2vw, 1.2rem);
   font-weight: 300;
   text-align: start;
@@ -39,14 +44,14 @@
 }
 
 .text-column > .reviews-wrapper h2 {
-  color: #f0f0f0;
+  color: var(--simple-white);
   font-size: clamp(1.8rem, 5vw, 2.5rem);
   font-weight: 800;
 }
 
 .text-column > .reviews-wrapper p {
   font-size: clamp(1rem, 5vw, 1.5rem);
-  color: #808080;
+  color: var(--light-gray);
   font-weight: 800;
 }
 

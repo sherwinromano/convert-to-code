@@ -31,6 +31,8 @@
 .faq-wrapper {
   width: 100%;
   gap: 2rem;
+  overflow: hidden;
+  padding: 1rem;
 }
 
 .faq-wrapper img {
@@ -39,6 +41,8 @@
   display: none;
   align-self: self-start;
 }
+
+/* ?? Accordion ui */
 
 .accordion {
   width: 100%;
@@ -119,7 +123,7 @@ details[open] summary span svg#minus-icon {
   display: block;
 }
 
-/*?? Shared */
+/* ?? Shared properties */
 
 .faq-wrapper,
 .view-all,
@@ -136,6 +140,8 @@ details[open] summary span svg#minus-icon {
 .faq-wrapper {
   display: flex;
 }
+
+/* ?? Responsive styles */
 
 @media (min-width: 640px) {
   .accordion {
